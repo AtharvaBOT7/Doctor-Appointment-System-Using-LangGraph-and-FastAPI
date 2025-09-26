@@ -19,7 +19,7 @@ class DateModel(BaseModel):
             raise ValueError("The date must be in the format 'DD-MM-YYYY'")
         return v
     
-class IdentificationNumnerModel(BaseModel):
+class IdentificationNumberModel(BaseModel):
     id: int = Field(description="Identification number (7 or 8 digit number)")
 
     @field_validator
