@@ -16,7 +16,7 @@ if st.button("Submit Query"):
                 st.success("Response Received:")
                 print("**********my response******************")
                 print(response.json())
-                st.write(response.json()["messages"])
+                st.write(response.json()["messages"][-1])
             else:
                 st.error(f"Error {response.status_code}: Could not process the request.")
         except Exception as e:
